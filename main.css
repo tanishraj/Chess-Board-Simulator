@@ -1,0 +1,88 @@
+*
+{
+    margin: 0;  padding: 0;
+}
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.chess-container
+{
+    display: table;  margin: 30px auto;
+}
+
+h1
+{
+    margin-bottom: 30px;  text-align: center;
+}
+
+input[type='text']
+{
+    padding: 4px 10px;
+}
+
+input[type='button']
+{
+    padding: 5px 10px;  color: #fff;  border: none;
+    background: #000;
+}
+
+.form-container
+{
+    margin-bottom: 30px;
+}
+
+.chess-board-container
+{
+  border: 1px solid #000;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+.chess-board-container .row{
+  display: flex;
+  justify-content: center;
+}
+
+.chess-board-container .row:nth-child(2n) .col:nth-child(2n){
+  background: #000;
+  color: #fff;
+}
+
+.chess-board-container .row:nth-child(2n+1) .col:nth-child(2n+1){
+  background: #000;
+  color: #fff;
+}
+
+.chess-board-container .col{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message{
+  font-size: 12px;
+  padding: 10px 5px;
+}
+
+.message.error{
+  color: #f00;
+}
+
+.message.success{
+  color: green;
+}
+
+.col.path{
+  background: #179a71 !important;
+  color: #fff !important;
+}
